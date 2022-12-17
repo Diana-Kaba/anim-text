@@ -10,7 +10,7 @@ function addText(id, text) {
     elem.innerHTML = text.substring(0, pos);
     if (pos == text.length) {
       // слово надруковано повністю
-      timer = clearInterval(timer); // завершити анімацію
+      clearInterval(timer); // завершити анімацію
     }
     
   }
