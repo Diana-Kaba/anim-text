@@ -1,4 +1,7 @@
 function addText(id, text) {
+  let arr = ["перемога", "Різдво", "Новий рік", "кохання"];
+  let random = Math.floor(Math.random() * arr.length);
+  text = arr[random];
   let timer;
   let elem = document.getElementById("block");
   let pos = 0; // начальне значення, відповідає першій літері
@@ -12,7 +15,6 @@ function addText(id, text) {
       // слово надруковано повністю
       clearInterval(timer); // завершити анімацію
     }
-    
   }
-  timer = setInterval(addLetter, 1000);// викликати функцію addLetter() кожні 1000 мс
+  timer = setInterval(addLetter, 1000); // викликати функцію addLetter() кожні 1000 мс
 }
